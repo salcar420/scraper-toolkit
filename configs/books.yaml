@@ -1,0 +1,32 @@
+# Example config: server-rendered site (http mode).
+# Scrapes the full book catalogue from books.toscrape.com (legal scraping sandbox).
+name: books
+mode: http
+start_url: https://books.toscrape.com/catalogue/page-1.html
+
+pagination:
+  type: url_pattern
+  pattern: https://books.toscrape.com/catalogue/page-{n}.html
+  start: 1
+
+item_selector: "article.product_pod"
+
+fields:
+  title:
+    selector: "h3 a"
+    attr: title
+  price:
+    selector: ".price_color"
+  availability:
+    selector: ".availability"
+  rating:
+    selector: "p.star-rating"
+    attr: class
+  url:
+    selector: "h3 a"
+    attr: href
+    absolute: true
+  image:
+    selector: "img"
+    attr: src
+    absolute: true

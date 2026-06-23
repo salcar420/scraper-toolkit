@@ -1,0 +1,20 @@
+# Example config: JavaScript-rendered site (browser mode, Playwright).
+# quotes.toscrape.com/js renders content with JS, so http mode would return nothing.
+name: quotes-js
+mode: browser
+start_url: https://quotes.toscrape.com/js/
+wait_for: ".quote"
+
+pagination:
+  type: next_link
+  selector: "li.next a"
+
+item_selector: ".quote"
+
+fields:
+  text:
+    selector: ".text"
+  author:
+    selector: ".author"
+  first_tag:
+    selector: ".tags .tag"

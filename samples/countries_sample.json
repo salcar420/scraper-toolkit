@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Andorra",
+    "capital": "Andorra la Vella",
+    "population": "84000",
+    "area_km2": "468.0"
+  },
+  {
+    "name": "United Arab Emirates",
+    "capital": "Abu Dhabi",
+    "population": "4975593",
+    "area_km2": "82880.0"
+  },
+  {
+    "name": "Afghanistan",
+    "capital": "Kabul",
+    "population": "29121286",
+    "area_km2": "647500.0"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "capital": "St. John's",
+    "population": "86754",
+    "area_km2": "443.0"
+  },
+  {
+    "name": "Anguilla",
+    "capital": "The Valley",
+    "population": "13254",
+    "area_km2": "102.0"
+  },
+  {
+    "name": "Albania",
+    "capital": "Tirana",
+    "population": "2986952",
+    "area_km2": "28748.0"
+  }
+]

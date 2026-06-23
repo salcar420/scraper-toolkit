@@ -1,0 +1,20 @@
+# Example config: a data-table site, single page (http mode).
+# scrapethissite.com is a public sandbox for scraping practice.
+name: countries
+mode: http
+start_url: https://www.scrapethissite.com/pages/simple/
+
+pagination:
+  type: none
+
+item_selector: ".country"
+
+fields:
+  name:
+    selector: ".country-name"
+  capital:
+    selector: ".country-capital"
+  population:
+    selector: ".country-population"
+  area_km2:
+    selector: ".country-area"
